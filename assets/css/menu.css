@@ -1,0 +1,316 @@
+/* =========================================================
+   MENU SECTION
+   Used on the home page teaser and on menu.html.
+   Loaded alongside style.css, after it, on any page that
+   includes a .menu-section.
+========================================================= */
+
+.menu-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: #f3e9cf;
+
+    padding: 4% 8% 6%;
+}
+
+
+.menu-header {
+
+    max-width: 640px;
+
+    margin-bottom: 60px;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+
+    color: #153a03;
+}
+
+
+.menu-header h1 {
+
+    font-size: 56px;
+
+    font-weight: 400;
+
+    margin: 0 0 16px 0;
+}
+
+
+.menu-header p {
+
+    font-size: 20px;
+
+    font-weight: 300;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+.menu-row {
+
+    column-gap: 60px;
+
+    row-gap: 40px;
+}
+
+
+.menu-category {
+
+    color: #153a03;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+}
+
+
+.menu-category-title {
+
+    font-size: 26px;
+
+    font-weight: 400;
+
+    margin: 0 0 28px 0;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid rgba(21, 58, 3, 0.25);
+}
+
+
+.menu-list {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.menu-item {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid rgba(21, 58, 3, 0.12);
+}
+
+
+.menu-item:last-child {
+
+    border-bottom: none;
+}
+
+
+.menu-item-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+
+.menu-item-name {
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+
+.menu-item-price {
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    color: #8a4a2c;
+
+    white-space: nowrap;
+}
+
+
+.menu-item-desc {
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    line-height: 1.5;
+
+    margin: 8px 0 0 0;
+
+    color: #3c5a2b;
+}
+
+
+.menu-item-tag {
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.3px;
+
+    margin-left: 10px;
+
+    padding: 2px 8px;
+
+    border-radius: 20px;
+
+    background: rgba(21, 58, 3, 0.08);
+
+    color: #3c5a2b;
+}
+
+
+.menu-footnote {
+
+    margin-top: 50px;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    font-style: italic;
+
+    color: #5c6f4a;
+}
+
+
+/* Full menu page: four categories side by side on desktop
+   instead of the two used in the home page teaser */
+
+.menu-section.full-menu .menu-row {
+
+    row-gap: 60px;
+}
+/* =========================================================
+   CTA BAND
+========================================================= */
+
+.cta-band {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: #f0ddaf;
+
+    padding: 8% 8%;
+
+    text-align: center;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+
+    color: #153a03;
+}
+
+
+.cta-band h2 {
+
+    font-size: 44px;
+
+    font-weight: 400;
+
+    margin: 0 0 14px 0;
+}
+
+
+.cta-band p {
+
+    font-size: 19px;
+
+    font-weight: 300;
+
+    margin: 0 0 32px 0;
+}
+
+
+.cta-band-link {
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    padding: 14px 34px;
+
+    border-radius: 4px;
+
+    background: #153a03;
+
+    color: #f3e9cf;
+
+    text-decoration: none;
+
+    transition: background 250ms ease;
+}
+
+
+.cta-band-link:hover {
+
+    background: #234f08;
+
+    color: #f3e9cf;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .menu-section {
+
+        padding: 60px 30px;
+    }
+
+
+    .menu-header h1 {
+
+        font-size: 40px;
+    }
+
+
+    .menu-row {
+
+        row-gap: 40px;
+    }
+
+
+    .menu-category {
+
+        width: 100%;
+    }
+
+}
