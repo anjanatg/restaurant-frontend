@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Menu &mdash; Navban</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+    <section class="hero-section">
+
+        <!-- Fixed Hero Image -->
+        <img
+            data-src="assets/images/pexels-tiennguyen-19841011.jpg"
+            alt="Hero Image"
+            class="hero-img fade-img"
+        />
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg position-absolute">
+
+            <div class="container">
+
+                <a class="navbar-brand text-white" href="restaurant.html">
+                    Navban
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarNavAltMarkup"
+                >
+                    <div class="navbar-nav text-center">
+
+                        <a class="nav-link text-white" href="restaurant.html">
+                            Home
+                        </a>
+
+                        <a
+                            class="nav-link active text-white"
+                            aria-current="page"
+                            href="menu.html"
+                        >
+                            Menu
+                        </a>
+
+                        <a class="nav-link text-white" href="about.html">
+                            About
+                        </a>
+
+                        <a class="nav-link text-white" href="restaurant.html#reserve">
+                            Reserve
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </section>
+
+
+    <!-- =====================================================
+         FULL MENU
+    ====================================================== -->
+    <section class="menu-section full-menu" id="menu">
+
+        <div class="container-fluid">
+
+            <div class="menu-header">
+                <h1 class="reveal-write">The Full Menu</h1>
+                <p class="reveal-up reveal-delay">
+                    A short, seasonal selection, cooked over wood and
+                    finished simply so the ingredient still leads. Ask
+                    your server about anything marked for dietary needs.
+                </p>
+            </div>
+
+            <div class="row g-0 menu-row">
+
+                <!-- Starters -->
+                <div class="col-lg-6 menu-category">
+
+                    <h4 class="menu-category-title reveal-write">Starters</h4>
+
+                    <ul class="menu-list">
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Charred Octopus</span>
+                                <span class="menu-item-price">14</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Smoked paprika, crushed potato, salsa verde
+                                <span class="menu-item-tag">GF</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Burrata</span>
+                                <span class="menu-item-price">12</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Heirloom tomato, basil oil, aged balsamic
+                                <span class="menu-item-tag">V</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Beef Tartare</span>
+                                <span class="menu-item-price">16</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Capers, shallot, egg yolk, toasted sourdough
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Charred Leeks</span>
+                                <span class="menu-item-price">11</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Romesco, toasted hazelnut, sherry vinegar
+                                <span class="menu-item-tag">VG</span>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Mains -->
+                <div class="col-lg-6 menu-category">
+
+                    <h4 class="menu-category-title reveal-write">Mains</h4>
+
+                    <ul class="menu-list">
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Roast Beef</span>
+                                <span class="menu-item-price">28</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Slow-roasted, herb crust, red wine jus
+                                <span class="menu-item-tag">GF</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Rice Bowl</span>
+                                <span class="menu-item-price">19</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Charred vegetables, soft egg, sesame, chili oil
+                                <span class="menu-item-tag">V</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Grilled Whole Fish</span>
+                                <span class="menu-item-price">26</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Lemon, fennel, charred herbs
+                                <span class="menu-item-tag">GF</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Braised Short Rib</span>
+                                <span class="menu-item-price">31</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Root vegetable purée, charred onion, jus
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Desserts -->
+                <div class="col-lg-6 menu-category">
+
+                    <h4 class="menu-category-title reveal-write">Desserts</h4>
+
+                    <ul class="menu-list">
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Basque Cheesecake</span>
+                                <span class="menu-item-price">10</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Burnt top, macerated berries
+                                <span class="menu-item-tag">V</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Dark Chocolate Tart</span>
+                                <span class="menu-item-price">11</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Sea salt, espresso cream
+                                <span class="menu-item-tag">V</span>
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Affogato</span>
+                                <span class="menu-item-price">8</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Vanilla gelato, hot espresso
+                                <span class="menu-item-tag">GF</span>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Drinks -->
+                <div class="col-lg-6 menu-category">
+
+                    <h4 class="menu-category-title reveal-write">Drinks</h4>
+
+                    <ul class="menu-list">
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">House Red</span>
+                                <span class="menu-item-price">9</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Glass, biodynamic, changes seasonally
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up reveal-delay">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">House White</span>
+                                <span class="menu-item-price">9</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Glass, dry, light-bodied
+                            </p>
+                        </li>
+
+                        <li class="menu-item reveal-up">
+                            <div class="menu-item-head">
+                                <span class="menu-item-name">Old Fashioned</span>
+                                <span class="menu-item-price">13</span>
+                            </div>
+                            <p class="menu-item-desc">
+                                Bourbon, bitters, charred orange
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="menu-footnote reveal-up">
+                V &mdash; vegetarian, VG &mdash; vegan, GF &mdash; gluten-free.
+                Full wine list available at the table.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA BAND
+    ====================================================== -->
+    <section class="cta-band">
+
+        <div class="container-fluid">
+
+            <h2 class="reveal-write">Ready When You Are</h2>
+
+            <p class="reveal-up reveal-delay">
+                Save a table for tonight, or for whenever suits.
+            </p>
+
+            <a href="restaurant.html#reserve" class="cta-band-link reveal-up">
+                Reserve a Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container-fluid">
+
+            <div class="footer-row">
+
+                <div class="footer-brand">
+                    <h3>Navban</h3>
+                    <p>Wood-fired plates, poured wine, open late.</p>
+                </div>
+
+                <div class="footer-info">
+                    <h5>Hours</h5>
+                    <p>Tue&ndash;Sun, 5pm&ndash;11pm</p>
+                    <p>Closed Mondays</p>
+                </div>
+
+                <div class="footer-info">
+                    <h5>Find Us</h5>
+                    <p>214 Mill Street</p>
+                    <p>Portside, CA</p>
+                </div>
+
+                <div class="footer-info">
+                    <h5>Contact</h5>
+                    <p>hello@navban.com</p>
+                    <p>(555) 013-8890</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Navban</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         LENIS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
