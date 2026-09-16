@@ -1,0 +1,288 @@
+/* =========================================================
+   CONTACT SECTION
+   Used only on contact.html. Loaded alongside style.css,
+   after it.
+========================================================= */
+
+.contact-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: #f7edd4be;
+}
+
+
+.contact-row {
+
+    min-height: 90vh;
+}
+
+
+.contact-img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 90vh;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.contact-content-box {
+
+    height: 100%;
+
+    padding: 8% 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    color: #153a03;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+}
+
+
+/* =========================================================
+   QUICK INFO GRID
+========================================================= */
+
+.contact-info-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px;
+
+    margin-bottom: 46px;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(21, 58, 3, 0.18);
+
+    max-width: 460px;
+}
+
+
+.contact-info-item h5 {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin: 0 0 8px 0;
+
+    color: rgba(21, 58, 3, 0.55);
+}
+
+
+.contact-info-item p {
+
+    font-size: 17px;
+
+    font-weight: 300;
+
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+.contact-form {
+
+    max-width: 460px;
+}
+
+
+.contact-form h3 {
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    margin: 0 0 26px 0;
+}
+
+
+.contact-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+
+.contact-field-row {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.contact-field-row .contact-field {
+
+    flex: 1;
+}
+
+
+.contact-field label {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+
+    color: #3c5a2b;
+}
+
+
+.contact-field input,
+.contact-field textarea {
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    padding: 10px 2px;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(21, 58, 3, 0.35);
+
+    background: transparent;
+
+    color: #153a03;
+
+    outline: none;
+
+    resize: none;
+
+    transition: border-color 250ms ease;
+}
+
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+
+    border-bottom-color: #153a03;
+}
+
+
+.contact-submit {
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    padding: 14px 34px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #153a03;
+
+    color: #f3e9cf;
+
+    cursor: pointer;
+
+    transition: background 250ms ease;
+}
+
+
+.contact-submit:hover {
+
+    background: #234f08;
+}
+
+
+.contact-confirmation {
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    margin: 18px 0 0 0;
+
+    color: #3c5a2b;
+
+    min-height: 20px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-row {
+
+        min-height: auto;
+    }
+
+
+    .contact-img {
+
+        min-height: 320px;
+
+        height: 320px;
+    }
+
+
+    .contact-content-box {
+
+        padding: 50px 30px;
+    }
+
+
+    .contact-info-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        max-width: 100%;
+    }
+
+
+    .contact-form h3 {
+
+        font-size: 28px;
+    }
+
+
+    .contact-field-row {
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+}
