@@ -151,4 +151,31 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("reserveGuests").value = 2;
     });
   }
+
+  // ---------------------------------------------------------------
+  // 6. Contact form: front-end only. Confirms the message inline
+  //    instead of actually submitting anywhere.
+  // ---------------------------------------------------------------
+  const contactForm = document.getElementById("contactForm");
+  const contactConfirmation = document.getElementById("contactConfirmation");
+
+  if (contactForm && contactConfirmation) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("contactName").value.trim();
+      const email = document.getElementById("contactEmail").value.trim();
+      const message = document.getElementById("contactMessage").value.trim();
+
+      if (!name || !email || !message) {
+        contactConfirmation.textContent = "Fill in your name, email, and message to send.";
+        return;
+      }
+
+      contactConfirmation.textContent =
+        `Thanks, ${name} — we'll reply to ${email} shortly.`;
+
+      contactForm.reset();
+    });
+  }
 });
