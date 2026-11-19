@@ -1,0 +1,359 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    position: relative;
+
+    z-index: 2;
+
+    overflow: hidden;                /* keeps the giant word inside the page */
+
+    background: #153a03;
+
+    color: #f3e9cf;
+
+    padding: 5% 6% 1.5%;
+
+    font-family:
+        "Gill Sans",
+        "Gill Sans MT",
+        Calibri,
+        sans-serif;
+}
+
+
+/* Links in the footer: a thin line draws under them on hover */
+
+.site-footer a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+
+    transition: background-size 300ms ease, color 300ms ease;
+}
+
+.site-footer a:hover {
+
+    background-size: 100% 1px;
+}
+
+
+/* ---------- Top: contact + link columns ---------- */
+
+.footer-main {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.6fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+
+/* Contact items (left) */
+
+.footer-contact {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 34px;
+}
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.contact-icon {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: rgba(243, 233, 207, 0.1);
+
+    font-size: 18px;
+}
+
+.contact-title {
+
+    display: block;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+}
+
+.contact-item p {
+
+    margin: 4px 0 0 0;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    color: rgba(243, 233, 207, 0.65);
+}
+
+
+/* Link columns (right) */
+
+.footer-links {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.footer-col h5 {
+
+    margin: 0 0 22px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+
+    font-weight: 400;
+}
+
+.footer-col ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-col li {
+
+    margin-bottom: 14px;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    color: rgba(243, 233, 207, 0.65);
+}
+
+.footer-col li a:hover {
+
+    color: #f3e9cf;
+}
+
+
+/* Columns rise in one after another (the rise itself is your .reveal-up) */
+
+.contact-item:nth-child(2) { transition-delay: 120ms; }
+.contact-item:nth-child(3) { transition-delay: 240ms; }
+
+.footer-col:nth-child(2) { transition-delay: 120ms; }
+.footer-col:nth-child(3) { transition-delay: 240ms; }
+
+
+/* ---------- Middle: note, social, legal ---------- */
+
+.footer-mid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer-note {
+
+    max-width: 300px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    line-height: 1.6;
+
+    color: rgba(243, 233, 207, 0.65);
+}
+
+.footer-social {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-social span {
+
+    margin-right: 6px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+}
+
+.footer-social a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(243, 233, 207, 0.1);
+
+    font-size: 15px;
+
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+.footer-social a:hover {
+
+    background-color: #f3e9cf;
+
+    color: #153a03;
+}
+
+.footer-legal {
+
+    display: flex;
+
+    gap: 30px;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    color: rgba(243, 233, 207, 0.65);
+}
+
+
+/* ---------- Giant faded word ---------- */
+
+.footer-word {
+
+    margin-top: 50px;
+
+    font-family: Impact, "Arial Narrow Bold", "Arial Black", sans-serif;
+
+    font-size: clamp(80px, 27vw, 420px);
+
+    font-weight: 700;
+
+    line-height: 0.65;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    user-select: none;
+
+    /* the letters fade from soft to a little lighter */
+    background: linear-gradient(90deg, rgba(243, 233, 207, 0.06), rgba(243, 233, 207, 0.2));
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ---------- Bottom line ---------- */
+
+.footer-bottom {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding: 10px 0 20px;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    color: rgba(243, 233, 207, 0.65);
+}
+
+
+/* ---------- Smaller screens ---------- */
+
+@media (max-width: 992px) {
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .site-footer {
+
+        padding: 60px 30px 20px;
+    }
+
+    .footer-links {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-mid {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-legal {
+
+        gap: 20px;
+    }
+}
