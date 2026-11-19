@@ -1152,9 +1152,14 @@ body {
     justify-content: space-between;
 
     padding-bottom: 40px;
-
-    border-bottom: 1px solid rgba(243, 233, 207, 0.2);
 }
+
+
+/* Columns rise in one after another (the rise itself is your .reveal-up) */
+
+.footer-row > :nth-child(2) { transition-delay: 120ms; }
+.footer-row > :nth-child(3) { transition-delay: 240ms; }
+.footer-row > :nth-child(4) { transition-delay: 360ms; }
 
 
 .footer-brand h3 {
@@ -1203,7 +1208,31 @@ body {
 }
 
 
+/* Links: a thin line draws under them on hover */
+
+.footer-info a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+
+    transition: background-size 300ms ease;
+}
+
+
+.footer-info a:hover {
+
+    background-size: 100% 1px;
+}
+
+
+/* Bottom line: the divider draws from left to right */
+
 .footer-bottom {
+
+    position: relative;
 
     padding: 20px 0;
 
@@ -1212,6 +1241,49 @@ body {
     font-weight: 300;
 
     color: rgba(243, 233, 207, 0.6);
+}
+
+
+.footer-bottom::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: rgba(243, 233, 207, 0.2);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
+}
+
+
+.footer-bottom.is-visible::before {
+
+    transform: scaleX(1);
+}
+
+
+/* No movement for people who turned off animations */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .footer-bottom::before {
+
+        transform: none;
+
+        transition: none;
+    }
 }
 
 
