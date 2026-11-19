@@ -300,11 +300,7 @@ body {
 
     width: max-content;
 
-    animation:
-        scroll-left
-        18s
-        linear
-        infinite;
+    animation:scroll-left 5s linear infinite;
 }
 
 
