@@ -723,6 +723,26 @@ body {
     border-color: #8a4a2c;
 }
 
+.story-section {
+    overflow: hidden;
+}
+
+.story-pic {
+    --far: 35%;                  
+    width: 100%;
+    transform: translate(
+        calc(var(--move, 0) * var(--far)),
+        calc(var(--move, 0) * var(--far))
+    );
+    will-change: transform;
+}
+
+/* Less movement on small screens */
+@media (max-width: 768px) {
+    .story-pic {
+        --far: 12%;
+    }
+}
 
 /* =========================================================
    GALLERY / PRESS HEADERS
