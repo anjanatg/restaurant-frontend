@@ -1,0 +1,93 @@
+.specials {
+  --card: 35vw;                  /* width of one card slot */
+  --i: 0;                        /* the JS changes this: 0, 1, 2... = which card is in the middle */
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0 70px;
+  background: #7dccbc;
+  color: #fff8ea;
+  font-family: 'Bodoni Moda', serif;
+}
+
+/* The new colour grows from the middle as a circle (the JS animates this) */
+.specials-bg {
+  position: absolute;
+  inset: 0;
+  clip-path: circle(0% at 50% 50%);
+}
+
+/* Curved heading */
+.specials-heading {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: calc(var(--card) * 0.77);
+  margin: 0 auto calc(var(--card) * -0.1);
+  fill: #fff8ea;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+/* Row of cards: slides left one card each time --i grows */
+.specials-track {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding-left: calc(50% - var(--card) / 2);       /* puts card 1 in the middle */
+  transform: translateX(calc(var(--i) * var(--card) * -1));
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.special {
+  flex: 0 0 var(--card);
+  text-align: center;
+}
+
+/* Cream ring with the round photo inside */
+.special-ring {
+  width: calc(var(--card) * 0.77);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 22px;
+  padding: calc(var(--card) * 0.08);
+  border-radius: 50%;
+  background: #f7f0df;
+}
+
+.special-ring img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: rotate(calc(var(--i) * 60deg));        /* the photo turns a little on every move */
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.special-title {
+  margin: 0 0 6px;
+  font-size: clamp(24px, calc(var(--card) * 0.075), 44px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.special-sub {
+  margin: 0 0 10px;
+  font-size: clamp(14px, calc(var(--card) * 0.038), 22px);
+  font-style: italic;
+}
+
+
+/* ---------- Smaller screens: bigger cards ---------- */
+@media (max-width: 991px) {
+  .specials { --card: 55vw; }
+}
+
+@media (max-width: 575px) {
+  .specials { --card: 78vw; }
+}
+
+/* No movement for people who turned off animations */
+@media (prefers-reduced-motion: reduce) {
+  .specials-track,
+  .special-ring img { transition: none; }
+}
