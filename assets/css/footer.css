@@ -287,7 +287,7 @@
     user-select: none;
 
     /* the letters fade from soft to a little lighter */
-    background: linear-gradient(90deg, rgba(243, 233, 207, 0.06), rgba(243, 233, 207, 0.2));
+    background: linear-gradient(90deg, rgba(243, 233, 207, 0.06), rgba(219, 205, 168, 0.39));
 
     -webkit-background-clip: text;
 
